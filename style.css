@@ -3,7 +3,7 @@
 #science {
     background-color: black;
     font-family: Arial, sans-serif;
-    border-radius: 20px;
+    border-radius: 20px;;
 }
 body {
     padding: 0px;
@@ -29,7 +29,7 @@ body {
     padding: 10px;
 }
 button {
-    height: 15vw;
+    height: 19vw;
     border-radius: 50%;
     font-size: x-large;
     font-weight: bold;
@@ -81,7 +81,7 @@ button:active {
         margin-top: 15px;
     }
     button {
-        height: 4vw;
+        height: 4.3vw;
     }
     #btns {
         padding: 10px;
