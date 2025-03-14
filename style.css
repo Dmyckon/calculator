@@ -1,0 +1,103 @@
+/* Calculator */
+
+#science {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    border-radius: 20px;
+}
+body {
+    padding: 0px;
+    background-image: linear-gradient(to right, rgb(77, 137, 57) , rgb(187, 54, 54), rgb(149, 0, 255));
+}
+#view {
+    width: 100%;
+    height: 10vh;
+    font-size: 3rem;
+    text-align-last: right;
+    padding-top: 70px;
+    font-weight: bold;
+    color: azure;
+    overflow: scroll;
+    background-color: rgb(35, 33, 33);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+button {
+    height: 15vw;
+    border-radius: 50%;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: rgb(52, 47, 47);
+    color: aliceblue;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(76, 70, 70);
+}
+button:active {
+    background-color: rgb(121, 116, 116);
+}
+.operators {
+    background-color: rgb(235, 117, 38);
+}
+.operators:hover {
+    background-color: rgb(238, 139, 72);
+}
+.operators:active {
+    background-color: rgb(244, 157, 98);
+}
+.remove {
+    background-color: rgb(53, 53, 243);
+}
+.remove:hover {
+    background-color: rgb(66, 66, 196);
+}
+.remove:active {
+    background-color: rgb(115, 115, 233);
+}
+#text {
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 5px 3px black;
+    font-size: 30px;
+}
+#name {
+    color: rgb(109, 106, 106);
+    text-align: right;
+    padding-right: 20px;
+    font-size: small;
+}
+@media only screen and (min-width: 1150px) {
+    #science {
+        max-width: 500px;
+        margin-left: 100px;
+        margin-top: 15px;
+    }
+    button {
+        height: 4vw;
+    }
+    #btns {
+        padding: 10px;
+    }
+    #view {
+        overflow: hidden;
+    }
+    #change {
+        display: flex;
+    }
+    #text {
+        text-shadow: 5px 5px rgb(236, 235, 223);
+        font-size: 4rem;
+        width: 370px;
+        margin-top: 150px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
