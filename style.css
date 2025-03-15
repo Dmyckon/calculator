@@ -7,7 +7,7 @@
 }
 body {
     padding: 0px;
-    background-image: linear-gradient(to left, rgb(80, 193, 205), rgb(95, 129, 221));
+    background-image: linear-gradient(to left, rgb(96, 126, 130), rgb(79, 95, 138));
 }
 #view {
     width: 100%;
@@ -21,6 +21,7 @@ body {
     background-color: rgb(35, 33, 33);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom: 2px solid whitesmoke;
 }
 #btns {
     display: grid;
@@ -29,7 +30,7 @@ body {
     padding: 10px;
 }
 button {
-    height: 19vw;
+    height: 20vw;
     border-radius: 50%;
     font-size: x-large;
     font-weight: bold;
@@ -74,10 +75,17 @@ button:active {
     padding-right: 20px;
     font-size: small;
 }
+#case {
+    padding: 10px;
+    background-color: rgb(196, 190, 181);
+    border-radius: 20px;
+    padding-bottom: 0px;
+    box-shadow: 10px 15px 8px 0px #888888;
+}
 @media only screen and (min-width: 1150px) {
     #science {
         max-width: 500px;
-        margin-left: 100px;
+        /* margin-left: 50px; */
         margin-top: 15px;
     }
     button {
@@ -99,5 +107,12 @@ button:active {
         margin-top: 150px;
         color: black;
         font-family: Arial, Helvetica, sans-serif;
+    }
+    #case {
+        padding: 7px;
+        background-color: rgb(196, 190, 181);
+        border-radius: 20px;
+        margin-left: 100px;
+        padding-bottom: 0px;
     }
 }
