@@ -75,12 +75,13 @@ button:active {
     font-weight: bold;
     position: relative;
     animation: animate 4s linear infinite;
-    animation-direction: alternate;
+    /* animation-direction: alternate; */
 }
 @keyframes animate {
-  0%   { background-color: red; left: 0px; }
-  50%  { background-color: yellow; left: 200px; }
-  100% { background-color: red; left: 400px; }
+    0%   {background-color: rgb(232, 223, 223);}
+    25%  {background-color: yellow;}
+    50%  {background-color: rgb(23, 172, 227);}
+    100% {background-color: rgb(51, 194, 51);}
 }
 #name {
     color: rgb(109, 106, 106);
@@ -114,12 +115,28 @@ button:active {
         display: flex;
     }
     #text {
-        text-shadow: 5px 5px rgb(236, 235, 223);
+        text-align: center;
+        color: transparent;
         font-size: 4rem;
-        width: 370px;
+        width: 400px;
         margin-top: 150px;
-        color: black;
+        /* color: black; */
         font-family: Arial, Helvetica, sans-serif;
+        background-clip: border-box;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* font-family: poppins, sans-serif; */
+        font-weight: bold;
+        position: relative;
+        animation: animate 4s linear infinite;
+    }
+    @keyframes animate {
+      10%   { background-color: rgb(96, 59, 59); left: 50px; }
+      10%   { background-color: rgb(67, 130, 109); left: 100px; }
+      50%  { background-color: rgb(24, 203, 216); left: 200px; }
+      100% { background-color: rgb(235, 221, 221); left: 250px; }
+      0%   { transform: translateX(-350px); }
+      100% { transform: translateX(-15vw); }
     }
     #case {
         padding: 7px;
