@@ -22,6 +22,8 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom: 2px solid whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 #btns {
     display: grid;
@@ -64,10 +66,21 @@ button:active {
 }
 #text {
     text-align: center;
-    color: antiquewhite;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 5px 3px black;
+    color: transparent;
     font-size: 30px;
+    background-clip: border-box;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    position: relative;
+    animation: animate 4s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes animate {
+  0%   { background-color: red; left: 0px; }
+  50%  { background-color: yellow; left: 200px; }
+  100% { background-color: red; left: 400px; }
 }
 #name {
     color: rgb(109, 106, 106);
@@ -80,7 +93,7 @@ button:active {
     background-color: rgb(196, 190, 181);
     border-radius: 20px;
     padding-bottom: 0px;
-    box-shadow: 10px 15px 8px 0px #888888;
+    /* box-shadow: 10px 15px 8px 0px #888888; */
 }
 @media only screen and (min-width: 1150px) {
     #science {
