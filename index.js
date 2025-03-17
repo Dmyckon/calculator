@@ -13,15 +13,15 @@ function calculate() {
 }
 
 function sins() {
-    document.getElementById("view").innerHTML = Math.sin(document.getElementById("view").innerHTML)
+    document.getElementById("view").innerHTML = Math.sin(document.getElementById("view").innerHTML * Math.PI / 180)
 }
 
 function tans() {
-    document.getElementById("view").innerHTML = Math.tan(document.getElementById("view").innerHTML)
+    document.getElementById("view").innerHTML = Math.tan(document.getElementById("view").innerHTML * Math.PI / 180)
 }
 
 function coss() {
-    document.getElementById("view").innerHTML = Math.cos(document.getElementById("view").innerHTML)
+    document.getElementById("view").innerHTML = Math.cos(document.getElementById("view").innerHTML * Math.PI / 180)
 }
 
 function log() {
@@ -29,7 +29,7 @@ function log() {
 }
 
 function pi() {
-    document.getElementById("view").innerHTML += Math.PI.toFixed(6)
+    document.getElementById("view").innerHTML *= Math.PI.toFixed(6)
 }
 
 function cubert() {
